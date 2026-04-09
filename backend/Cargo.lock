@@ -1036,6 +1036,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "patchhive-github-pr"
+version = "0.1.0"
+source = "git+https://github.com/patchhive/patchhive-github-pr.git#1e6000bd64e0c7be29b4c15fe303ba085ca65a8d"
+dependencies = [
+ "anyhow",
+ "hex",
+ "hmac",
+ "http",
+ "reqwest",
+ "serde",
+ "serde_json",
+ "sha2",
+]
+
+[[package]]
 name = "patchhive-product-core"
 version = "0.1.0"
 source = "git+https://github.com/patchhive/patchhive-product-core.git#f4f3edb3f4d7430ecfd1fc2b65233a4ea92dc80b"
@@ -1866,15 +1881,13 @@ dependencies = [
  "chrono",
  "dotenvy",
  "glob",
- "hex",
- "hmac",
  "once_cell",
+ "patchhive-github-pr",
  "patchhive-product-core",
  "reqwest",
  "rusqlite",
  "serde",
  "serde_json",
- "sha2",
  "tokio",
  "tower-http 0.5.2",
  "tracing",
